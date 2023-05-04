@@ -4,12 +4,15 @@
     --third-color:#2E838C;
     --alter-mid-color:#2D6673;
     --text-color:#293040;
+    --primary-font:'Roboto', sans-serif;
+    --transition-duration:500ms;
 }
 
 body{
     background-color: var(--main-bg-color);
     overflow: hidden;
     padding: 0;
+    font-family: var(--primary-font);
 }
 
 #header {
@@ -18,7 +21,7 @@ body{
     justify-content: space-between;
     align-items: center;
     align-content: space-around;
-    padding: 5px;
+    padding: 15px;
     background-color: var(--secondary-bg-color);
 }
 #logo{
@@ -30,12 +33,15 @@ nav ul{
     justify-content: center;
     list-style: none;
     margin: auto;
+    padding-left: 25px;
 }
 nav ul a {
+    margin-left: 25px;
     padding:10px 20px 10px 20px;
     color:var(--text-color);
     text-decoration: none;
     font-weight: 800;
+    transition:var(--transition-duration);
 }
 nav ul a:hover{
     background-color: var(--alter-mid-color);
@@ -69,6 +75,7 @@ nav ul a:hover{
     border-left: #293040;
     margin-left: 15px;
     border-radius: 10px;
+    transition:var(--transition-duration);
 }
 
 #demoLink:hover{

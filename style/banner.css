@@ -1,16 +1,53 @@
 #banner{
     padding: 0;
+    width: 100%;
+    display: flex;
 }
 
 #boat{
+    display: flex;
+    /* flex-direction: column; */
     height: 500px;
     z-index: 999;
+    justify-content: space-around;
+}
+
+#heroWord{
+    padding-top: 50px;
+}
+
+#heroWord h1{
+    display: block;
+    font-size: 64px;
+    color: var(--text-color);
+}
+
+#heroWord h2{
+    display: block;
+    font-size: 32px;
+    color: var(--alter-mid-color);
+    margin-left: 15px;
+    padding: 15px 5px 15px 5px;
+
+}
+
+#heroWord a{
+    text-decoration: none;
+    border: solid;
+    color: var(--text-color);
+    padding: 10px 15px 10px 15px;
+    margin: 25px;
+    font-size: 24px;
+    transition:var(--transition-duration);
+}
+
+#heroWord a:hover{
+    background-color: var(--secondary-bg-color);
 }
 
 .ocean { 
     width:100%;
     position: inherit;
-    z-index: 99;
   }
   
   .wave1 {
@@ -21,6 +58,7 @@
     height: 198px;
     animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
     transform: translate3d(0, 0, 0);
+    z-index: 99;
   }
   .wave2 {
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
@@ -30,6 +68,7 @@
     height: 198px;
     animation: wave 7s cubic-bezier( 0.2, 0.25, 0.23, 0.53) infinite;
     transform: translate3d(0, 0, 0);
+    z-index: 99;
   }
 
   
@@ -49,4 +88,8 @@
     50% {
       transform: translate3d(0,5px,0);
     }
+  }
+
+  #boat #ship{
+    height: 700px;
   }
