@@ -43,6 +43,7 @@
 
 #heroWord a:hover{
     background-color: var(--secondary-bg-color);
+    color:var(--main-bg-color);
 }
 
 .ocean { 

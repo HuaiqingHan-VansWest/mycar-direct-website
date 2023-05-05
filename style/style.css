@@ -1,9 +1,9 @@
 :root{
-    --main-bg-color: #F2F2F2;
-    --secondary-bg-color: #F2C166;
+    --main-bg-color: #7EC8E3;
+    --secondary-bg-color: #0000FF;
     --third-color:#2E838C;
-    --alter-mid-color:#2D6673;
-    --text-color:#293040;
+    --alter-mid-color:#000C66;
+    --text-color:#050A30;
     --primary-font:'Roboto', sans-serif;
     --transition-duration:500ms;
 }
@@ -22,7 +22,7 @@ body{
     align-items: center;
     align-content: space-around;
     padding: 15px;
-    background-color: var(--secondary-bg-color);
+    background-color: var(--main-bg-color);
 }
 #logo{
     padding: 10px 0 0 10px;
@@ -45,7 +45,7 @@ nav ul a {
 }
 nav ul a:hover{
     background-color: var(--alter-mid-color);
-    color: var(--secondary-bg-color);
+    color: var(--main-bg-color);
 }
 
 .login{
@@ -62,7 +62,7 @@ nav ul a:hover{
 }
 
 .login #loginBtn{
-    background: var(--secondary-bg-color);
+    background: var(--main-bg-color);
     color: var(--text-color);
     border: none;
     border-radius: 5px;
